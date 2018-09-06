@@ -2,222 +2,30 @@
 
 
 @media only screen and (max-width: 1900px) {
-  .phone_wrap .phone_1 .phone_wrap_bg{
-    background-image: none;
+  .sl_tabs {
+    background: #fff!important;
+    /* float: right; */
+    max-width: 1500px;
+    width: 100%!important;
+  }
+  .slider_grid .grid {
+
+    justify-content: center;
   }
 }
 @media only screen and (max-width: 1200px) {
-  .phone_wrap .phone_2 .phone_wrap_bg {
-    margin: 0;
-    padding: 41px 0;
-  }
-  .phone_inform span {
-    color: #fb9332;
-    font-size: 36px;
-    font-weight: 100;
-    line-height: 40px;
-    display: block;
-    margin-bottom: 40px;
-  }
-  .phone_wrap .phone_2 .phone_inform:before {
-
-    height: 335px;
-    bottom: -360px;
-    right: 311px;
-    z-index: 10;
-  }
-  .our_team_item .our_team_item_inform {
-    padding: 55px;
-    background-color: #fff;
-  }
-  .our_team:before {
-
-    font-size: 91px;
-
-    bottom: -14px;
-    left: -webkit-calc(50% - 285px);
-    left: calc(50% - 170px);
+  .slider_grid .grid .item a img {
+    height: 266px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    max-width: 294px;
   }
 }
 
 @media only screen and (max-width: 992px) {
-  .row-medium{
-    display: flex;
-    flex-direction: column-reverse;
 
-  }
-  .main_screen {
-
-
-    background-position:  right top;
-    background-size: cover;
-  }
-  .phone_wrap .phone_1 .phone {
-
-    transform: none;
-    padding: 53px 14px 70px;
-    margin: 0 auto;
-    position: relative;
-    z-index: 10;
-  }
-  .phone_inform{
-    margin-bottom: 30px;
-  }
-  .phone_inform span{
-    text-align: center;
-  }
-  .phone_inform p{
-    text-align: center;
-    font-size: 20px;
-    line-height: 28px;
-  }
-  .phone_wrap .phone_1 .phone_wrap_bg:before,.phone_wrap .phone_2 .phone_inform:before,.phone_wrap .phone_3 .phone_inform:before{
-    display: none;
-  }
-  .phone_2 .phone_wrap_bg {
-
-    width: 706px;
-    height: 705px;
-  }
-  .phone_wrap .phone_1 .phone_wrap_bg{
-    padding-bottom: 0;
-  }
-  .phone_wrap .phone_3 {
-    padding: 0 0;
-    margin-top: 100px;
-    width: 100%;
-  }
-  .our_team_item_img img{
-    width: 300px;
-  }
-  .main_screen {
-    width: 100%;
-    min-height: 652px;
-    padding-bottom: 100px;
-
-    background-color: #f78715;
-  }
-  .phone_wrap {
-    margin-top: 0;
-    padding-bottom: 100px;
-
-  }
 }
 
 @media only screen and (max-width: 767px) {
-  .phone_2 .phone_wrap_bg {
 
-    width: 100%;
-    height: auto;
-  }
-  .form_main form {
-    padding: 70px 30px;
-  }
-  .our_team h2 {
-    color: #fff;
-    font-family: Roboto;
-    font-size: 34px;
-    font-weight: 300;
-    margin-bottom: 40px;
-    text-align: center;
-  }
-  .our_team_item{
-    flex-direction: column;
-    .our_team_item_img img{
-      width: 100%;
-      max-width: 300px;
-    }
-
-  }
-  .our_team_item .our_team_item_inform {
-    padding: 25px;
-    background-color: #fff;
-  }
-  .main_logo span{
-    display: none;
-  }
-  body .name{
-    font-size: 40px;
-  }
-  .main_screen_inform .logo img{
-    margin: 20px auto 0;
-  }
-  .main_screen_inform > p {
-    font-size: 22px;
-    font-weight: 400;
-    margin-bottom: 20px;
-    margin-top: 10px;
-  }
-  .main_screen_inform>span {
-    color: #fff;
-    font-size: 17px;
-    font-weight: 100;
-    line-height: 22px;
-    text-align: center;
-  }
-  .main_screen {
-    width: 100%;
-    min-height: inherit;
-    padding-bottom: 74px;
-    background-color: #f78715;
-  }
-  .phone_wrap .phone_1 .phone_inform {
-    margin-top: 60px;
-
-  }
-  .phone_inform span {
-    color: #fb9332;
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 29px;
-    display: block;
-    margin-bottom: 15px;
-  }
-  .phone_inform p {
-    text-align: center;
-    font-size: 16px;
-    line-height: 22px;
-  }
-  .phone_wrap .phone_2 .phone_inform {
-    position: relative;
-    margin-top: 111px;
-  }
-  .phone_wrap .phone_3 {
-
-    width: 100%;
-
-    min-height: inherit;
-
-    padding-bottom: 129px;
-  }
-  .our_team_item .our_team_item_inform p {
-
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 23px;
-  }
-  .our_team {
-    padding-top: 430px;
-    background-image: url(../img/tean_bg.jpg);
-    background-color: #de9726;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-    min-height: initial;
-    padding-bottom: 80px;
-    position: relative;
-    overflow: hidden;
-  }
-  .our_team:before {
-    font-size: 56px;
-    bottom: -7px;
-
-    left: calc(50% - 100px);
-  }
-  .phone_wrap .phone_4 .phone_wrap_bg:before,.phone_wrap .phone_4 .phone_wrap_bg:after{
-    display: none;
-  }
-  .phone_wrap .phone_4 .phone_wrap_bg{
-    background-size: contain;
-  }
 }

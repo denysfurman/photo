@@ -2,6 +2,16 @@
 
 $(function () {
 
+
+    //galleryy
+    $('.fancybox_gall').fancybox({
+
+    });
+
+
+
+
+
     //slick
     $(".Modern-Slider").slick({
 
@@ -14,10 +24,28 @@ $(function () {
         pauseOnDotsHover:true,
         cssEase:'linear',
         fade:true,
-        draggable:false,
+        draggable:true,
         prevArrow:'<button class="PrevArrow"></button>',
         nextArrow:'<button class="NextArrow"></button>',
     });
+
+    //slick
+    $(".portfolio_slider").slick({
+
+
+        speed:600,
+        slidesToShow:1,
+        slidesToScroll:1,
+        pauseOnHover:false,
+        dots:false,
+        pauseOnDotsHover:true,
+        cssEase:'ease',
+        fade:true,
+        draggable:true,
+        prevArrow:'<button class="PrevArrow"></button>',
+        nextArrow:'<button class="NextArrow"></button>',
+    });
+
 
 
 
@@ -55,18 +83,18 @@ $(function () {
     });
 
 
-    // init Masonry
-    var $grid = $('.grid').masonry({
-        // options...
-        itemSelector: '.item',
-        isFitWidth: true,
-        columnWidth: 3
-    });
-
-// layout Masonry after each image loads
-    $grid.imagesLoaded().progress( function() {
-        $grid.masonry('layout');
-    });
+//     // init Masonry
+//     var $grid = $('.grid').masonry({
+//         // options...
+//         itemSelector: '.item',
+//
+//         columnWidth: 1
+//     });
+//
+// // layout Masonry after each image loads
+//     $grid.imagesLoaded().progress( function() {
+//         $grid.masonry('layout');
+//     });
 
 
 });
@@ -101,3 +129,4 @@ jQuery(function ($) {
     $(window).trigger('scroll');
 
 });
+

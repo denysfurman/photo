@@ -4,23 +4,7 @@ $transition: ease-in-out .5s;
 
 
 
-.content {
-  color: white;
-  margin: auto;
-  text-align: center;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  h1 {
-    font-size: 20rem;
-    @media only screen and (max-width: 767px) {
-      font-size: 7rem;
-    }
-  }
-}
+
 
 .menu_btn {
   position: relative;
@@ -155,39 +139,5 @@ nav {
 
 
 
-#masonryGrid {
-  width: 100%;
-  .grid {
-    margin: 0 auto;
-    .item {
-      margin: 0.5rem;
-      a{
-        display: inline-block;
-        img{
-          max-height: 340px;
-          object-fit: cover;
-          max-width: 560px;
-        }
 
-      }
-    }
-  }
-}
-
-
-.Grid1k {
-  padding: 0 15px;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.blocks-box, .slick-slider {
-  margin: 0;
-  padding: 0 !important;
-}
-
-.slick-slide {
-  float: left;
-  padding: 0;
-}
 
