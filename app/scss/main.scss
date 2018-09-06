@@ -1,0 +1,105 @@
+@import "vars";
+@import "animated";
+@import "libs";
+@import "main_page";
+@import "main_slider";
+@import "header";
+
+
+::placeholder {
+  color: #666;
+}
+
+::selection {
+  background-color: #ffa742;
+  color: #fff;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.65;
+
+  overflow-x: hidden;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+
+}
+
+a , button{
+  text-decoration: none;
+  transition: all 0.3s ease;
+  outline: none!important;
+  border: none!important;
+}
+
+input{
+  &[type="email"], &[type="number"], &[type="search"], &[type="text"], &[type="tel"], &[type="url"], &[type="password"] {
+    border: none !important;
+    outline: none;
+    height: 63px;
+    background-color: #eeeeee;
+    width: 100%;
+    color: #333;
+    margin-bottom: 30px;
+    border-radius: 5px;
+
+    font-size: 18px;
+
+    font-weight: 300;
+
+    line-height: 63px;
+    padding: 0 20px;
+  }
+  &:focus:required:invalid {
+    border-color: red;
+  }
+  &:required:valid {
+    border-color: green;
+  }
+}
+textarea{
+  height: 140px;
+  line-height: 20px;
+  padding:  15px 20px ;
+  border: none!important;
+  outline: none;
+  color: #333;
+  background-color: #eeeeee;
+  width: 100%;
+
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 300;
+  resize: none;
+  border-radius: 5px;
+  &:focus:required:invalid {
+    border-color: red;
+  }
+  &:required:valid {
+    border-color: green;
+  }
+}
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  li{
+    list-style: none;
+  }
+}
+@import "media"; // Always at the end

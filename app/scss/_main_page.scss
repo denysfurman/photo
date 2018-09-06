@@ -1,0 +1,44 @@
+
+
+footer{
+  padding: 55px 0;
+  background-color: #fff;
+
+  .footer_information{
+    text-align: center;
+    span{
+      color: #a8a8a8;
+
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 24px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+
+.button{
+  width: 201px;
+  height: 55px;
+  background-color: #ff9600;
+  display: flex;
+  margin: 20px auto 0;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 72px;
+  color: #fff;
+  border-radius: 40px;
+  &:hover{
+    background-color: #ffb83d;
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+

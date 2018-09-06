@@ -1,0 +1,193 @@
+$blue: #172CFB;
+$transition: ease-in-out .5s;
+
+
+
+
+.content {
+  color: white;
+  margin: auto;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    font-size: 20rem;
+    @media only screen and (max-width: 767px) {
+      font-size: 7rem;
+    }
+  }
+}
+
+.menu_btn {
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+  z-index: 20;
+  margin-left: auto;
+  margin-bottom: auto;
+  a {
+    font-size: 1.6rem;
+    padding: 2rem 1.5rem;
+    display: inline-block;
+    letter-spacing: 3px;
+    transition: color $transition;
+    color: #000;
+    &:hover,
+    &:focus,
+    &:focus-within {
+      color: $blue;
+    }
+  }
+}
+
+nav {
+  display: block;
+}
+
+.panel {
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  overflow: hidden;
+  width: 0%;
+  &--left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #111;
+    right: 0;
+  }
+}
+
+.line {
+  display: block;
+  position: absolute;
+  left: -3.5rem;
+  top: 4.5rem;
+  width: 2.8rem;
+  height: 0.1rem;
+  background: rgba(130, 130, 130, .6);
+  opacity: 0;
+}
+
+.navigation ul li,
+.navigation ul li a,
+.navigation ul li a span {
+  position: relative;
+  display: block;
+}
+
+.navigation {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  h2 {
+    width: 0;
+    height: 0;
+    text-indent: -9999px;
+  }
+  .menu {
+    display: flex;
+    flex: 8;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    >li {
+      line-height: 9rem;
+      font-size: 7rem;
+      position: relative;
+      clear: both;
+
+      @media only screen and (max-width: 767px) {
+        font-size: 4rem;
+      }
+
+      >a {
+        color: #fff;
+        text-decoration: none;
+        overflow: hidden;
+        transition: color $transition;
+        &:hover,
+        &:focus,
+        &:focus-within {
+          color: $blue;
+        }
+        >span {
+          top: 0;
+          text-transform: capitalize;
+          transform: translate(0, -100%);
+        }
+      }
+    }
+  }
+}
+
+.litem {
+  //transform: translate(0, -100vw);
+}
+
+
+.close_btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  a {
+    font-size: 1em;
+    padding: 0px;
+    display: inline-block;
+    letter-spacing: 3px;
+    transition: color $transition;
+    color: #fff;
+    &:hover,
+    &:focus,
+    &:focus-within {
+      color: $blue;
+    }
+  }
+}
+
+
+
+#masonryGrid {
+  width: 100%;
+  .grid {
+    margin: 0 auto;
+    .item {
+      margin: 0.5rem;
+      a{
+        display: inline-block;
+        img{
+          max-height: 340px;
+          object-fit: cover;
+          max-width: 560px;
+        }
+
+      }
+    }
+  }
+}
+
+
+.Grid1k {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.blocks-box, .slick-slider {
+  margin: 0;
+  padding: 0 !important;
+}
+
+.slick-slide {
+  float: left;
+  padding: 0;
+}
+
