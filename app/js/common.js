@@ -8,6 +8,7 @@ $(function () {
 
     });
 
+    //slider portfolio
     $('.slick-slider_1').slick({
         speed:600,
 
@@ -33,6 +34,11 @@ $(function () {
         } else {
             $('.slick-slider_1').slick('slickUnfilter')
         }
+    });
+
+    $('.slick-filter button').click(function() {
+        $(".slick-filter button").removeClass("active");
+        $(this).addClass("active");
     });
 
 

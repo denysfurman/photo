@@ -31,6 +31,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-weight: 300;
   background-color: #fff;
+  -webkit-appearance: none;
 
 }
 
@@ -38,7 +39,7 @@ a , button{
   text-decoration: none;
   transition: all 0.3s ease;
   outline: none!important;
-  border: none!important;
+  border: none;
   cursor: pointer;
 }
 
