@@ -12,6 +12,7 @@ $(function () {
 
 
 
+
     //slick
     $(".Modern-Slider").slick({
 
@@ -58,7 +59,7 @@ $(function () {
         var lines = $('.line');
         var data_content = $('.data__content');
         var data_sub = $('.data__sub');
-        var footer = $('.footer');
+
 
         var tl = new TimelineLite({ paused: true });
 
@@ -67,8 +68,8 @@ $(function () {
             .to(data_content, 0.5, { y: 0, opacity: 1 })
             .to(data_sub, 0.5, { y: 0, opacity: 1 }, "-=0.25")
             .staggerTo(links, 0.4, { y: 0 }, 0.05, "-=0.45")
-            .to(lines, 0.5, { opacity: 1 })
-            .to(footer, 0.5, { opacity: 1 }, "-=0.5");
+            .to(lines, 0.5, { opacity: 1 });
+
 
         open_btn.on('click', function (e) {
             e.preventDefault();
@@ -81,6 +82,19 @@ $(function () {
         });
 
     });
+
+    $('.open_menu').click(function() {
+        $(".navigation").addClass("active");
+    });
+
+    $('.close_btn a').click(function() {
+        setTimeout(function() {
+            $(".navigation").removeClass("active");
+        }, 2000);
+        $
+    });
+
+
 
 
 //     // init Masonry

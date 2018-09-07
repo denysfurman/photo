@@ -129,7 +129,7 @@ footer{
 
 .main_about{
   width: 100%;
-  padding-top: 50px;
+  padding: 50px 0;
   display: inline-block;
   p{
     text-align: center;
@@ -159,6 +159,39 @@ footer{
       font-size: 14px;
       color: #838383;
     }
+    a{
+      width: 100%;
+      height: 255px;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 57px;
+      &:hover{
+        text-decoration: none;
+        background-color: #ff9600;
+        p,span{
+          color: #fff;
+        }
+      }
+      p{
+        margin: 0 0 20px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 24px;
+      }
+      span{
+        margin-top: 0;
+        color: #ff9600;
+
+        font-size: 18px;
+
+        line-height: 22px;
+        i{
+          margin-left: 10px;
+        }
+      }
+    }
   }
 
 }
@@ -186,7 +219,36 @@ section h2{
 }
 
 .portfolio_main{
+  padding-top: 50px;
   padding-bottom: 50px;
   width: 100%;
   display: inline-block;
+}
+.main_question{
+  padding: 50px 0 125px;
+  width: 100%;
+  .button{
+    margin: 0 auto;
+  }
+}
+
+.main_question_item{
+  margin-bottom: 40px;
+  span{
+    color: #2c91d8;
+
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    display: block;
+    margin-bottom: 15px;
+  }
+  p{
+    opacity: 0.7;
+    color: #777777;
+
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+  }
 }
