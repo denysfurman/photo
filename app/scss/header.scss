@@ -10,15 +10,21 @@ $transition: ease-in-out .5s;
   justify-content: space-between;
   z-index: 101;
   width: 100%;
-  max-width: 1444px;
+  max-width: 1480px;
+  padding:  0 30px;
   margin: 0 auto -100px;
   align-items: center;
   align-content: center;
-  .social li a {
-    color: #646d73;
-    font-size: 22px;
-    opacity: 0.5;
-    color: #282828;
+  .social {
+    margin: 15px 0 0;
+
+    li a {
+      color: #646d73;
+      font-size: 22px;
+      opacity: 0.5;
+      color: #282828;
+      margin-top: 9px;
+    }
   }
 }
 
@@ -30,6 +36,7 @@ $transition: ease-in-out .5s;
   z-index: 20;
   margin-left: auto;
   margin-bottom: auto;
+  margin-top: 3px;
   a {
     opacity: 0.5;
     color: #282828;
@@ -42,7 +49,7 @@ $transition: ease-in-out .5s;
     align-items: center;
     transition: color $transition;
     i{
-      margin-right: 15px;
+      margin-right: 21px;
       font-size: 24px;
     }
     &:hover,
@@ -116,8 +123,7 @@ nav {
     justify-content: center;
     text-align: left;
     >li {
-      line-height: 9rem;
-      font-size: 7rem;
+
       position: relative;
       clear: both;
 
@@ -125,15 +131,36 @@ nav {
         font-size: 4rem;
       }
 
-      >a {
+      a {
         color: #fff;
         text-decoration: none;
         overflow: hidden;
         transition: color $transition;
+        font-size: 30px;
+        text-transform: uppercase!important;
+        margin-bottom: 30px;
+        text-align: center;
+        position: relative;
+        span{
+          text-transform: uppercase!important;
+        }
+        &:after{
+          content: "";
+          background-color: #292b2c;
+          height: 2px;
+          width: 100px;
+          position: relative;
+
+
+          display: block;
+          left: calc(50% - 50px);
+          margin-top: 30px;
+
+        }
         &:hover,
         &:focus,
         &:focus-within {
-          color: $blue;
+          color: #ff9500;
         }
         >span {
           top: 0;
@@ -149,19 +176,25 @@ nav {
 
 .close_btn {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 50px;
+  left: 100px;
   a {
-    font-size: 1em;
+    font-size: 18px;
+    color: #868686;
     padding: 0px;
-    display: inline-block;
-    letter-spacing: 3px;
+    display: flex;
+    align-content: center;
+    align-items: center;
     transition: color $transition;
-    color: #fff;
+    i{
+      margin-right: 15px;
+      font-size: 30px;
+    }
     &:hover,
     &:focus,
     &:focus-within {
-      color: $blue;
+      color: #ff9600;
+      text-decoration: none;
     }
   }
 }

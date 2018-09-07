@@ -8,6 +8,33 @@ $(function () {
 
     });
 
+    $('.slick-slider_1').slick({
+        speed:600,
+
+
+        pauseOnHover:false,
+        dots:false,
+        pauseOnDotsHover:true,
+        cssEase:'linear',
+        fade:true,
+        draggable:true,
+        prevArrow:'<button class="PrevArrow"></button>',
+        nextArrow:'<button class="NextArrow"></button>',
+        slidesToShow: 1,
+    });
+
+    $('.slick-filter button').click(function() {
+        var dc = $(this).attr("id");
+        var filter = $('.slick-slider_1');
+        if (dc != "show_all") {
+            $('.slick-slider_1').slick('slickUnfilter')
+            filter.slick('slickFilter', '.'+dc);
+
+        } else {
+            $('.slick-slider_1').slick('slickUnfilter')
+        }
+    });
+
 
 
 
@@ -30,22 +57,6 @@ $(function () {
         nextArrow:'<button class="NextArrow"></button>',
     });
 
-    //slick
-    $(".portfolio_slider").slick({
-
-
-        speed:600,
-        slidesToShow:1,
-        slidesToScroll:1,
-        pauseOnHover:false,
-        dots:false,
-        pauseOnDotsHover:true,
-        cssEase:'ease',
-        fade:true,
-        draggable:true,
-        prevArrow:'<button class="PrevArrow"></button>',
-        nextArrow:'<button class="NextArrow"></button>',
-    });
 
 
 
@@ -91,24 +102,25 @@ $(function () {
         setTimeout(function() {
             $(".navigation").removeClass("active");
         }, 2000);
-        $
+
     });
 
 
 
 
-//     // init Masonry
-//     var $grid = $('.grid').masonry({
-//         // options...
-//         itemSelector: '.item',
-//
-//         columnWidth: 1
-//     });
-//
-// // layout Masonry after each image loads
-//     $grid.imagesLoaded().progress( function() {
-//         $grid.masonry('layout');
-//     });
+
+    // init Masonry
+    var $grid = $('.grid').masonry({
+        // options...
+        itemSelector: '.item',
+
+        columnWidth: 1
+    });
+
+// layout Masonry after each image loads
+    $grid.imagesLoaded().progress( function() {
+        $grid.masonry('layout');
+    });
 
 
 });
