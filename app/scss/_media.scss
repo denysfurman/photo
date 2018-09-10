@@ -3,10 +3,15 @@
 
 @media only screen and (max-width: 1900px) {
   .sl_tabs {
-    background: #fff!important;
-    /* float: right; */
-    max-width: 1500px;
+
     width: 100%!important;
+  }
+
+  .slider_grid .grid .item a img {
+    height: 267px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    max-width: 410px;
   }
   .slider_grid .grid {
 
@@ -20,12 +25,136 @@
     object-fit: cover;
     max-width: 294px;
   }
+  .Modern-Slider .PrevArrow {
+
+    left: 20px;
+  }
+  .Modern-Slider .NextArrow {
+
+    right: 20px;
+  }
+  .portfolio_main {
+    padding: 50px 15px;
+  }
+  .main_about .main_about_person a {
+    width: 100%;
+    height: 255px;
+
+    padding: 0 15px;
+    text-decoration: none;
+    background-color: #ff9600;
+    p,span{
+      color: #fff;
+    }
+  }
+  .Modern-Slider .item .img-fill {
+    height: 651px;
+    min-height: 600px;
+
+  }
+
 }
 
 @media only screen and (max-width: 992px) {
+  .slider_grid .grid .item a img {
+    height: 160px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    max-width: 250px;
+  }
+  .slider_grid .grid .item {
+    margin: 2px;
+  }
+  .main_about .main_about_person a {
 
+    height: auto;
+    padding: 26px 15px;
+
+    background-color: #ff9600;
+  }
+  .Modern-Slider .item h2 {
+    color: #282828;
+
+    font-size: 33px;
+    font-weight: 300;
+    line-height: 40px;
+  }
+  .main_about .main_about_person {
+    margin-top: 20px;
+  }
+  .navigation .menu-list>li a {
+
+    font-size: 24px;
+    text-transform: uppercase!important;
+    margin-bottom: 10px;
+    text-align: center;
+    position: relative;
+  }
+  .navigation .menu-list>li a:after {
+
+   display: none;
+  }
+  .close_btn {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
+  .slider_grid .grid .item a img {
+    height: 160px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 160px;
+  }
+  .slick-filter{
+    flex-direction: column;
+  }
+  .Modern-Slider .PrevArrow {
 
+   display: none!important;
+  }
+  .Modern-Slider .NextArrow {
+
+    display: none!important;
+  }
+  .slick-filter button{
+    margin: 0 0 10px;
+  }
+  footer .menu-list{
+    flex-direction: column;
+    li{
+      margin: 0;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+  }
+  .main_header .social{
+    display: none;
+  }
+  .main_header{
+    flex-direction: row-reverse;
+  }
+  .Modern-Slider .item .img-fill {
+    height: 449px;
+    min-height: 402px;
+  }
+  .Modern-Slider .item .info>div {
+    display: inline-block!important;
+    margin-bottom: 40px;
+  }
+  .main_about_item {
+
+    margin: 54px 0 13px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .slider_grid .grid .item a img {
+    height: 145px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 145px;
+  }
 }

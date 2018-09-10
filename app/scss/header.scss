@@ -159,7 +159,8 @@ nav {
         }
         &:hover,
         &:focus,
-        &:focus-within {
+        &:focus-within,
+        &.active{
           color: #ff9500;
         }
         >span {
@@ -202,6 +203,7 @@ nav {
 
 footer{
   background-image: url("../img/footer_bg.jpg");
+  background-size: cover;
 
   width: 100%;
   padding: 40px 0 50px;
@@ -270,3 +272,54 @@ footer{
   }
 }
 
+
+
+.all_pages{
+  position: fixed;
+  top: 20%;
+  right: 0;
+  z-index: 101;
+  &.open{
+    ul{
+      right: 0;
+    }
+  }
+  .page_point{
+    width: 40px;
+    height: 15px;
+    background-color: #48bcff;
+    cursor: pointer;
+  }
+  ul{
+    background-color: #48bcff;
+    padding: 15px 20px;
+    position: absolute;
+    top: 100%;
+    width: 250px;
+    right: -250px;
+    transition: .4s;
+    max-height: 450px;
+    overflow-y: auto;
+    li{
+      list-style: none;
+      margin-bottom: 5px;
+      font-size: 17px;
+
+      a{
+        color: #fff;
+      }
+    }
+  }
+}
+.page_wrap{
+  width: 100%;
+  background-image: url("../img/fon.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  padding-bottom: 100px;
+  .main_header{
+    margin: 0 auto 20px;
+
+  }
+}

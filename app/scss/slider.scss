@@ -11,7 +11,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 300;
-  margin-bottom: 30px;
+  margin-bottom: 45px;
 
 }
 .slick-filter button {
@@ -20,6 +20,7 @@
   font-family: 'Rubik', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: transparent;
   font-weight: 300;
 
   cursor: pointer;
@@ -27,7 +28,7 @@
   margin-right: 30px;
   font-size: 15px;
   text-transform: uppercase;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 
   border-bottom: 2px solid transparent;
   &.active{
@@ -52,12 +53,12 @@
 .portfolio_slider {
   background: #fff!important;
   float: right;
-  max-width: 1500px;
+  max-width: 1527px;
 
   .NextArrow {
     position: absolute;
-    top: calc(50% + 30px);
-    left: 8px;
+    top: calc(50% + 26px);
+    left: 4px;
     width: 45px;
     height: 45px;
     background-color: #fff;
@@ -84,8 +85,8 @@
   }
   .PrevArrow {
     position: absolute;
-    left: 8px;
-    top: calc(50% - 30px);
+    left: 4px;
+    top: calc(50% - 27px);
     width: 45px;
     height: 45px;
 

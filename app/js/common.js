@@ -3,6 +3,12 @@
 $(function () {
 
 
+    //all page
+    $('.all_pages').click(function() {
+        $('.all_pages').toggleClass('open');
+    });
+
+
     //galleryy
     $('.fancybox_gall').fancybox({
 
@@ -107,7 +113,7 @@ $(function () {
     $('.close_btn a').click(function() {
         setTimeout(function() {
             $(".navigation").removeClass("active");
-        }, 2000);
+        }, 2200);
 
     });
 
@@ -123,10 +129,10 @@ $(function () {
         columnWidth: 1
     });
 
-// layout Masonry after each image loads
-    $grid.imagesLoaded().progress( function() {
-        $grid.masonry('layout');
-    });
+// // layout Masonry after each image loads
+//     $grid.imagesLoaded().progress( function() {
+//         $grid.masonry('layout');
+//     });
 
 
 });

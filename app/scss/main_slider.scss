@@ -6,19 +6,22 @@
   display: inline-block;
   .item {
     .img-fill {
-      height: 100vh;
+      height: 102vh;
       min-height: 600px;
       background: #fff;
       .info {
         position: absolute;
         width: 100%;
         height: 100%;
-        top: 0px;
+
         left: 0px;
         bottom: 0;
         background: rgba(255, 255, 255, 0.14);
-
-        line-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-content: center;
+        align-items: center;
         text-align: center;
       }
       img {
@@ -29,12 +32,13 @@
     }
     .info > div {
       display: inline-block !important;
-      vertical-align: middle;
+      margin-bottom: 200px;
+
     }
   }
   .NextArrow {
     position: absolute;
-    top: 50%;
+    bottom: 300px;
     right: 200px;
     width: 45px;
     height: 45px;
@@ -61,7 +65,7 @@
   }
   .PrevArrow {
     position: absolute;
-    top: 50%;
+    bottom: 300px;
     left: 200px;
     width: 45px;
     height: 45px;
