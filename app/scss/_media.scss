@@ -148,13 +148,25 @@
 
     margin: 54px 0 13px;
   }
+  .slider_grid .grid .item:last-child{
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 350px) {
   .slider_grid .grid .item a img {
-    height: 145px;
-    -o-object-fit: cover;
+    height: 140px;
+
     object-fit: cover;
-    width: 145px;
+    width: 140px;
+  }
+  .main_header{
+    padding: 0 15px;
+  }
+  .Modern-Slider .item h2 {
+    color: #282828;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 33px;
   }
 }

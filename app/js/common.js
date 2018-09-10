@@ -69,6 +69,40 @@ $(function () {
         nextArrow:'<button class="NextArrow"></button>',
     });
 
+    //slider about
+    $('.technique_slider').slick({
+        centerMode: true,
+        centerPadding: '30px',
+        slidesToShow: 5,
+        pauseOnHover:false,
+        dots:false,
+        pauseOnDotsHover:true,
+        prevArrow:'<button class="PrevArrow"></button>',
+        nextArrow:'<button class="NextArrow"></button>',
+        draggable: true,
+
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+
 
 
 

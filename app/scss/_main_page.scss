@@ -34,6 +34,9 @@ footer{
   line-height: 72px;
   color: #fff;
   border-radius: 40px;
+  &.big_button{
+    width: 353px;
+  }
   &:hover{
     background-color: #ffb83d;
     text-decoration: none;
@@ -158,6 +161,11 @@ footer{
     max-width: 194px;
     margin-top: 35px;
   }
+  img{
+    width: 88px;
+    object-fit: contain;
+    height: 88px;
+  }
 }
 .main_about{
   hr{
@@ -172,23 +180,14 @@ footer{
 section h2{
   color: #282828;
   font-family: Rubik;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 300;
-  line-height: 50px;
+  line-height: 30px;
   text-transform: uppercase;
   position: relative;
   text-align: center;
   margin-bottom: 45px;
-  &:before{
-    content: "";
-    position: absolute;
-    display: inline-block;
-    width: 2px;
-    height: 36px;
-    background-color: #ff9600;
-    top: -35px;
-    left: calc(50% - 3px);
-  }
+
 }
 
 .portfolio_main{
@@ -228,3 +227,18 @@ section h2{
 
 
 
+
+
+.slider_grid .grid .item a img {
+
+  transition: 3s;
+
+  transform: scale(1);
+  &:hover{
+    transform: scale(1.2);
+  }
+}
+
+.slider_grid .grid .item{
+  overflow: hidden;
+}
