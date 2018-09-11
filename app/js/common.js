@@ -22,7 +22,7 @@ $(function () {
         pauseOnHover:false,
         dots:false,
         pauseOnDotsHover:true,
-        cssEase:'linear',
+
         fade:true,
         draggable:true,
         prevArrow:'<button class="PrevArrow"></button>',
@@ -69,6 +69,25 @@ $(function () {
         nextArrow:'<button class="NextArrow"></button>',
     });
 
+    //photo tour slider
+    $(".tour_information_slider").slick({
+
+
+        speed:600,
+        slidesToShow:1,
+        slidesToScroll:1,
+        pauseOnHover:false,
+        dots:false,
+        pauseOnDotsHover:true,
+
+       
+        draggable:true,
+        prevArrow:'<button class="PrevArrow"></button>',
+        nextArrow:'<button class="NextArrow"></button>',
+    });
+
+
+
     //slider about
     $('.technique_slider').slick({
         centerMode: true,
@@ -83,9 +102,9 @@ $(function () {
 
         responsive: [
             {
-                breakpoint: 768,
+                breakpoint: 992,
                 settings: {
-                    arrows: false,
+
                     centerMode: true,
                     centerPadding: '40px',
                     slidesToShow: 3
@@ -96,7 +115,7 @@ $(function () {
                 settings: {
                     arrows: false,
                     centerMode: true,
-                    centerPadding: '40px',
+                    centerPadding: '60px',
                     slidesToShow: 1
                 }
             }
@@ -172,33 +191,4 @@ $(function () {
 });
 
 
-jQuery(function ($) {
-
-    // Function which adds the 'animated' class to any '.animatable' in view
-    var doAnimations = function () {
-
-        // Calc current offset and get all animatables
-        var offset = $(window).scrollTop() + $(window).height(),
-            $animatables = $('.animatable');
-
-        // Unbind scroll handler if we have no animatables
-        if ($animatables.length == 0) {
-            $(window).off('scroll', doAnimations);
-        }
-
-        // Check all animatables and animate them if necessary
-        $animatables.each(function (i) {
-            var $animatable = $(this);
-            if (($animatable.offset().top + $animatable.height() - 20) < offset) {
-                $animatable.removeClass('animatable').addClass('animated');
-            }
-        });
-
-    };
-
-    // Hook doAnimations on scroll, and trigger a scroll
-    $(window).on('scroll', doAnimations);
-    $(window).trigger('scroll');
-
-});
 

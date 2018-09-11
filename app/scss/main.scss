@@ -8,7 +8,7 @@
 @import "all_page";
 
 ::placeholder {
-  color: #666;
+  color: #959595;
 }
 
 ::selection {
@@ -50,18 +50,18 @@ input{
   &[type="email"], &[type="number"], &[type="search"], &[type="text"], &[type="tel"], &[type="url"], &[type="password"] {
     border: none !important;
     outline: none;
-    height: 63px;
+    height: 54px;
     background-color: #eeeeee;
     width: 100%;
     color: #333;
     margin-bottom: 30px;
     border-radius: 5px;
 
-    font-size: 18px;
+    font-size: 16px;
 
     font-weight: 300;
 
-    line-height: 63px;
+    line-height: 54px;
     padding: 0 20px;
   }
   &:focus:required:invalid {
@@ -80,9 +80,10 @@ textarea{
   color: #333;
   background-color: #eeeeee;
   width: 100%;
+  font-size: 16px;
 
   margin-bottom: 30px;
-  font-size: 18px;
+  color: #333;
   font-weight: 300;
   resize: none;
   border-radius: 5px;

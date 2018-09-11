@@ -27,11 +27,12 @@ footer{
   justify-content: center;
   align-items: center;
   align-content: center;
-  border-radius: 6px;
+
   cursor: pointer;
   font-size: 18px;
   font-weight: 300;
-  line-height: 72px;
+  box-shadow: none;
+  border: none;
   color: #fff;
   border-radius: 40px;
   &.big_button{
@@ -179,7 +180,7 @@ footer{
 
 section h2{
   color: #282828;
-  font-family: Rubik;
+
   font-size: 24px;
   font-weight: 300;
   line-height: 30px;
@@ -190,11 +191,13 @@ section h2{
 
 }
 
-.portfolio_main{
+.portfolio_main {
   padding-top: 50px;
   padding-bottom: 50px;
   width: 100%;
-  display: inline-block;
+  display: block;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 .main_question{
   padding: 50px 0 125px;
