@@ -47,32 +47,7 @@ footer{
 
 
 
-.slider_grid {
-  width: 100%;
 
-
-  .grid {
-
-    width: 100%;
-
-    max-width: 1527px;
-    margin: 0 auto;
-    display: block;
-    .item {
-      margin: 4px;
-
-      a{
-        display: inline-block;
-        img{
-          height: 320px;
-          object-fit: cover;
-          max-width: 560px;
-        }
-
-      }
-    }
-  }
-}
 
 
 
@@ -163,9 +138,9 @@ footer{
     margin-top: 35px;
   }
   img{
-    width: 88px;
+    width: 110px;
     object-fit: contain;
-    height: 88px;
+    height: 110px;
   }
 }
 .main_about{
@@ -244,4 +219,9 @@ section h2{
 
 .slider_grid .grid .item{
   overflow: hidden;
+}
+
+.portfolio_main.wedding{
+  padding-bottom: 0;
+  display: inline-block;
 }

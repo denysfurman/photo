@@ -172,13 +172,20 @@ $(function () {
 
 
 
-
-
-    // init Masonry
     var $grid = $('.grid').masonry({
         // options...
         itemSelector: '.item',
 
+
+        columnWidth: 1
+    });
+
+    // init Masonry
+    var $grid = $('.portfolio_page_slider .grid').masonry({
+        // options...
+        itemSelector: '.item',
+
+        fitWidth: true,
         columnWidth: 1
     });
 

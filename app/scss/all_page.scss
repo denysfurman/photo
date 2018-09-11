@@ -383,3 +383,70 @@
 .price_section{
   padding: 80px 0;
 }
+
+.price_item{
+  padding: 30px 15px;
+  text-align: center;
+  background-color: #f5fbfc;
+  margin-bottom: 30px;
+  h3{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+  span{
+    width: 120px;
+    height: 120px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: -10px auto ;
+    color: #ff9600;
+
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+  li{
+    padding-bottom: 17px;
+    font-size: 14px;
+    line-height: 18px;
+    &:last-child{
+      &:after{
+        display: none;
+      }
+    }
+    &:after {
+      content: "";
+      background-color: #dddddd;
+      height: 1px;
+      width: 100px;
+      position: relative;
+      display: block;
+      left: -webkit-calc(50% - 50px);
+      left: calc(50% - 50px);
+      margin-top: 17px;
+    }
+
+  }
+  .button{
+    height: 43px;
+  }
+}
+.calendar{
+  p{
+    text-align: center;
+  }
+}
+.video_wr{
+  margin-bottom: 100px;
+}
+.about_text img {
+
+  height: 100%;
+}

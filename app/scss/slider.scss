@@ -22,7 +22,6 @@
   -moz-osx-font-smoothing: grayscale;
   background-color: transparent;
   font-weight: 300;
-
   cursor: pointer;
   padding: 0;
   margin-right: 30px;
@@ -109,6 +108,119 @@
     &:hover{
       color: #fff;
       background: #007ad0;
+    }
+  }
+
+
+}
+.slider_grid {
+  width: 100%;
+
+
+  .grid {
+
+    width: 100%;
+
+    max-width: 1527px;
+    margin: 0 auto;
+    display: block;
+    .item {
+      margin: 4px;
+
+      a{
+        display: inline-block;
+        img{
+          height: 320px;
+          object-fit: cover;
+          max-width: 560px;
+        }
+
+      }
+    }
+  }
+}
+
+.portfolio_page_slider{
+  .NextArrow {
+    position: absolute;
+    top: calc(50% + 26px);
+    left: 4px;
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    border: 0 none;
+    margin-top: -22.5px;
+    text-align: center;
+    font-family: "Font Awesome 5 Pro";
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    font-weight: 200;
+    line-height: 1;
+    color: #007ad0;
+    font-size: 30px;
+
+    z-index: 5;
+    &:before {
+      content: '\f178';
+    }
+    &:hover{
+      color: #fff;
+      background: #007ad0;
+    }
+  }
+  .PrevArrow {
+    position: absolute;
+    left: 4px;
+    top: calc(50% - 27px);
+    width: 45px;
+    height: 45px;
+
+    border: 0 none;
+    margin-top: -22.5px;
+    text-align: center;
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 200;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    font-size: 30px;
+    line-height: 1;
+    color: #007ad0;
+    background-color: #fff;
+    z-index: 5;
+    &:before {
+      content: '\f177';
+    }
+    &:hover{
+      color: #fff;
+      background: #007ad0;
+    }
+  }
+  .slider_grid {
+    width: 100%;
+    .grid {
+
+      width: 100%;
+
+      max-width: 100%;
+      margin: 0 auto;
+      display: block;
+      .item {
+        margin: 4px;
+
+        a{
+          display: inline-block;
+          img{
+            max-height: 800px;
+            object-fit: cover;
+            max-width: 500px;
+            width: auto;
+            height: auto;
+          }
+
+        }
+      }
     }
   }
 

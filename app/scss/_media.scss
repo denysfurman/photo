@@ -123,6 +123,9 @@
     top: 30px;
     left: 30px;
   }
+  .video_item.main_video img {
+    height: 350px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -202,6 +205,11 @@
   .form_communication {
     padding: 20px 0 50px;
   }
+  .page_title {
+    font-size: 36px;
+    text-align: center;
+    margin: 34px 0;
+  }
 
 
 }
@@ -222,9 +230,5 @@
     font-weight: 300;
     line-height: 33px;
   }
-  .page_title {
-    font-size: 35px;
-    text-align: center;
-    margin: 70px 0;
-  }
+
 }
