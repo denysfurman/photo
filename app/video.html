@@ -47,7 +47,7 @@
                     <ul class="menu-list">
     
                         <li class="menu-item current-menu-item">
-                            <a href="#"><span class="litem"> Свадьбы  </span></a>
+                            <a href="/wedding.html"><span class="litem"> Свадьбы  </span></a>
     
                         </li>
                         <li class="menu-item ">
@@ -154,7 +154,7 @@
                 </div>
 
             </div>
-            <a href="#" class="button big_button">Заказать видеосьемку</a>
+            <a data-fancybox="" data-src="#trueModal"  href="javascript:;"  class="button big_button">Заказать видеосьемку</a>
         </div>
 
 
@@ -168,7 +168,6 @@
         </div>
     </section>
 </div>
-
 
 
 
@@ -225,11 +224,66 @@
         <li><a href="phototur.html">Photo Tour</a></li>
         <li><a href="wedding.html">Wedding</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
-
-
-
     </ul>
 </div>
+
+
+<div id="trueModal" class="p-5 fancybox-content fancy_text">
+    <h2>
+        ЗАЯВКА НА ФОТОСЕССИЮ
+    </h2>
+    <p>Отправьте нам письмо и мы ответим Вам в течении часа</p>
+    <div class="form_wrap">
+
+        <div class="form_content">
+
+            <div class="form-group">
+                                <span>
+                                    <input type="text" name="username" class="form-control form_text"
+                                           placeholder="Имя">
+                                </span>
+            </div>
+            <div class="form-group">
+                                <span>
+                                    <input type="text" name="phone" class="form-control form_text"
+                                           placeholder="Телефон">
+                                </span>
+            </div>
+
+            <div class="form-group">
+                                <span>
+                                     <input type="email" name="email" class="form-control form_text"
+                                            placeholder="Email">
+                                </span>
+            </div>
+            <div class="form-group">
+                
+                                <span>
+                                    <select class="form_style">
+                                        <option value="#">Тип фотосесии</option>
+                                        <option value="#">Тип фотосесии2</option>
+                                        <option value="#">Тип фотосесии3</option>
+                                    </select>
+
+                                </span>
+            </div>
+
+
+            <div class="form-group">
+                                <span>
+                                    <textarea name="massage" placeholder="Ваше сообщение"></textarea>
+                                </span>
+            </div>
+        </div>
+        <div class="form_actions">
+            <input type="submit" value="Отправить" class="btn_standard btn_send button">
+        </div>
+
+    </div>
+
+</div>
+
+
 
 
 <script src='https://cdn.jsdelivr.net/jquery/3.1.1/jquery.js'></script>
@@ -239,7 +293,9 @@
 <script src="libs/fancybox/jquery.fancybox.min.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
+<script type="text/javascript"
+        src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
+<script src="libs/form_style/jquery.formstyler.js"></script>
 
 <script src="js/common.js"></script>
 

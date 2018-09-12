@@ -29,10 +29,10 @@
   text-transform: uppercase;
   padding-bottom: 15px;
 
-  border-bottom: 2px solid transparent;
+  border-bottom: 2px solid transparent!important;
   &.active{
     color: #000;
-    border-bottom: 2px solid #ff9600;
+    border-bottom: 2px solid #ff9600!important;
   }
   &:last-child{
     margin-right: 0;
