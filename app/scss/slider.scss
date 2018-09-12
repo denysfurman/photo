@@ -143,8 +143,8 @@
 .portfolio_page_slider{
   .NextArrow {
     position: absolute;
-    top: calc(50% + 26px);
-    left: 4px;
+    top: 300px;
+    right: 4px;
     width: 45px;
     height: 45px;
     background-color: #fff;
@@ -172,7 +172,7 @@
   .PrevArrow {
     position: absolute;
     left: 4px;
-    top: calc(50% - 27px);
+    top: 300px;
     width: 45px;
     height: 45px;
 
@@ -199,22 +199,32 @@
   }
   .slider_grid {
     width: 100%;
+    max-width: 1700px;
+    margin: 0 auto;
+
     .grid {
-
       width: 100%;
-
-      max-width: 100%;
+      max-width: 1700px;
       margin: 0 auto;
       display: block;
       .item {
         margin: 4px;
+        &:first-child{
+          img{
+            max-height: 600px;
+            object-fit: cover;
+            max-width: 752px;
+
+            height: auto;
+          }
+        }
 
         a{
           display: inline-block;
           img{
-            max-height: 800px;
+            max-height: 700px;
             object-fit: cover;
-            max-width: 500px;
+            max-width: 372px;
             width: auto;
             height: auto;
           }
@@ -225,4 +235,12 @@
   }
 
 
+}
+.portfolio_main.wedding {
+
+  display: block!important;
+
+}
+.portfolio_main.wedding .portfolio_slider{
+  margin-bottom: 70px;
 }

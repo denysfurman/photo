@@ -1,6 +1,15 @@
+$(document).ready(function() {
+    setTimeout(function() {
+        $('body').addClass('loaded');
+
+    }, 900);
+
+
+});
 
 
 $(function () {
+
 
 
     //all page
@@ -187,6 +196,9 @@ $(function () {
 
         fitWidth: true,
         columnWidth: 1
+    });
+    $(function() {
+        $('.grid img').Lazy();
     });
 
 // // layout Masonry after each image loads
